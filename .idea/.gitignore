@@ -4,7 +4,7 @@
 ../AdventOfCode.iml
 *.xml
 *.class
-../target
+../target/
 sonarlint
 ../AdventOfCode.iml
 ../pom.xml
