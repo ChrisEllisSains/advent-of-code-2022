@@ -12,12 +12,12 @@ public class day1 {
   public static void main(String[] args) throws IOException {
 
     String str = Files.readString(Paths.get("src/main/resources/ElveFood"));
-    String Elves[] = str.split("\\n\\n");
+    String[] Elves = str.split("\\n\\n");
     int cal1 = 0, cal2 = 0, cal3 = 0;
     ArrayList<Integer> cals = new ArrayList<>();
 
     for(int i = 0; i < Elves.length; i++) {
-      String calories[] = Elves[i].split("\\n");
+      String[] calories = Elves[i].split("\\n");
       int elvecalories = 0;
       for(int j = 0; j < calories.length; j++) {
         elvecalories += Integer.parseInt(calories[j]);

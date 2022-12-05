@@ -6,15 +6,15 @@ public class day4 {
     String str = java.nio.file.Files.readString(
         java.nio.file.Paths.get("src/main/resources/inputday4"));
 
-    String pair[] = str.split("\\n");
+    String[] pair = str.split("\\n");
 
     int count1 = 0;
     int count2 = 0;
 
     for(int i = 0; i < pair.length; i++) {
-      String elves[] = pair[i].split(",");
-      String value1[] = elves[0].split("-");
-      String value2[] = elves[1].split("-");
+      String[] elves = pair[i].split(",");
+      String[] value1 = elves[0].split("-");
+      String[] value2 = elves[1].split("-");
 
       int e1min = Integer.parseInt(value1[0]);
       int e1max = Integer.parseInt(value1[1]);
@@ -37,11 +37,7 @@ public class day4 {
   }
 
   private static boolean inRange(int min, int max, int num) {
-    if(num >= min && num <= max) {
-      return true;
-    } else {
-      return false;
-    }
+    return num >= min && num <= max;
   }
 
 }

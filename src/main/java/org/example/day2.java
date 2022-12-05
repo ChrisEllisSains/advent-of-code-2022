@@ -8,7 +8,7 @@ public class day2 {
 
   public static void main(String[] args) throws IOException {
     String str = Files.readString(Paths.get("src/main/resources/rps"));
-    String rounds[] = str.split("\\n");
+    String[] rounds = str.split("\\n");
 
     int totalScore = 0;
 

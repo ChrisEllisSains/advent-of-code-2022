@@ -2,12 +2,12 @@ package org.example;
 
 public class day3 {
 
-  private static java.util.Hashtable pValue = new java.util.Hashtable();
+  private static final java.util.Hashtable pValue = new java.util.Hashtable();
 
   public static void main(String[] args) throws java.io.IOException {
     String str = java.nio.file.Files.readString(
         java.nio.file.Paths.get("src/main/resources/inputday3"));
-    String rucksack[] = str.split("\\n");
+    String[] rucksack = str.split("\\n");
     int sumPriorities = 0;
 
     for (int i = 0; i < rucksack.length; i++) {
